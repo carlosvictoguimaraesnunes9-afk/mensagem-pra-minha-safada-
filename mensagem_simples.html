@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #ffb3d9;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 24px;
+        }
+
+        button {
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+        }
+
+        #mensagem {
+            display: none;
+            margin-top: 30px;
+            font-size: 28px;
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        .coracao {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="coracao">❤️</div>
+        <h1>Clique aqui bebê</h1>
+        
+        <button onclick="mostrar()">Clica aí ❤️</button>
+
+        <div id="mensagem">
+            ✨ Boa noite gostosa ✨
+        </div>
+    </div>
+
+    <script>
+        function mostrar() {
+            document.getElementById('mensagem').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
